@@ -1,0 +1,55 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: Resepsionis
+        - heading "Dashboard Resepsionis" [level=1] [ref=e7]
+        - paragraph [ref=e8]: Kongres Luar Biasa - Kongres Wanita Indonesia
+      - button "Reset Demo" [ref=e9]:
+        - img
+        - text: Reset Demo
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - img [ref=e15]
+            - text: Total Undangan
+          - generic [ref=e20]: "5"
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - img [ref=e24]
+            - text: Total Hadir
+          - generic [ref=e27]: "0"
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - img [ref=e31]
+            - text: Belum Hadir
+          - generic [ref=e34]: "5"
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - img [ref=e38]
+            - text: Kehadiran
+          - generic [ref=e41]: 0%
+      - generic [ref=e42]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Recent Arrivals
+          - generic [ref=e46]: Kehadiran terbaru akan muncul otomatis.
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - generic [ref=e66]: Daftar Tamu Hadir
+            - generic [ref=e67]: Diurutkan berdasarkan waktu hadir terbaru.
+          - generic [ref=e68]:
+            - group [ref=e70]:
+              - generic [ref=e71]: Cari Tamu
+              - generic [ref=e72]:
+                - img
+                - textbox "Cari Tamu" [ref=e73]:
+                  - /placeholder: Nama, organisasi, atau nomor undangan
+            - generic [ref=e75]:
+              - generic [ref=e76]:
+                - img
+              - generic [ref=e77]: Data Tidak Ditemukan
+              - generic [ref=e78]: Tidak ada tamu hadir yang cocok dengan pencarian.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e84] [cursor=pointer]:
+    - img [ref=e85]

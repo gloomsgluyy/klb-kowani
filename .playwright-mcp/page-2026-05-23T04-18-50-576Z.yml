@@ -1,0 +1,35 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - heading "Kongres Luar Biasa" [level=1] [ref=e8]
+      - img "Logo Kowani" [ref=e9]
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - img "Logo Kowani" [ref=e15]
+        - generic [ref=e16]: KONGRES LUAR BIASA
+        - generic [ref=e17]: Masukkan Nomor Undangan Anda
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - group [ref=e21]:
+            - generic [ref=e22]: Nomor Undangan
+            - textbox "Nomor Undangan" [ref=e23]:
+              - /placeholder: "Contoh: A-001"
+            - paragraph [ref=e24]: Pastikan nomor sama seperti yang tertera pada surat undangan.
+          - button "Verifikasi Kehadiran" [disabled]:
+            - text: Verifikasi Kehadiran
+            - img
+        - paragraph [ref=e26]:
+          - img [ref=e27]
+          - text: Butuh bantuan? Hubungi Panitia
+    - generic [ref=e31]:
+      - paragraph [ref=e32]: 2026 Kongres Luar Biasa. Empowering the Collective Voice.
+      - navigation [ref=e33]:
+        - link "Privacy Policy" [ref=e34] [cursor=pointer]:
+          - /url: "#"
+        - link "Support" [ref=e35] [cursor=pointer]:
+          - /url: "#"
+        - link "Terms of Service" [ref=e36] [cursor=pointer]:
+          - /url: "#"
+  - region "Notifications alt+T"

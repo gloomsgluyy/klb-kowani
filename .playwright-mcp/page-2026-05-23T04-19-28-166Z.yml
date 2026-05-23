@@ -1,0 +1,45 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - heading "Kongres Luar Biasa" [level=1] [ref=e8]
+      - img "Logo Kowani" [ref=e9]
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - img [ref=e51]
+        - generic [ref=e54]: Konfirmasi Identitas
+        - generic [ref=e55]: Apakah benar Anda Rina Puspitasari dari Persatuan Perempuan Indonesia?
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - term [ref=e59]: Nama Lengkap
+          - definition [ref=e60]: Rina Puspitasari
+        - generic [ref=e61]:
+          - term [ref=e62]: Organisasi / Asal
+          - definition [ref=e63]: Persatuan Perempuan Indonesia
+        - generic [ref=e64]:
+          - term [ref=e65]: Nomor Undangan
+          - definition [ref=e66]: A-002
+        - generic [ref=e67]:
+          - term [ref=e68]: Peran
+          - definition [ref=e69]: Pengurus
+      - generic [ref=e70]:
+        - button "Ya, Saya Hadir" [ref=e71]:
+          - img
+          - text: Ya, Saya Hadir
+        - button "Tidak" [ref=e72]:
+          - img
+          - text: Tidak
+    - generic [ref=e31]:
+      - paragraph [ref=e32]: 2026 Kongres Luar Biasa. Empowering the Collective Voice.
+      - navigation [ref=e33]:
+        - link "Privacy Policy" [ref=e34] [cursor=pointer]:
+          - /url: "#"
+        - link "Support" [ref=e35] [cursor=pointer]:
+          - /url: "#"
+        - link "Terms of Service" [ref=e36] [cursor=pointer]:
+          - /url: "#"
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e42] [cursor=pointer]:
+    - img [ref=e43]
+  - alert [ref=e46]

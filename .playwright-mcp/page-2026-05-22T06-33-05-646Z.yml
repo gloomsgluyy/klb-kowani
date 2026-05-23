@@ -1,0 +1,20 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: KONGRES LUAR BIASA
+      - generic [ref=e6]: Kongres Wanita Indonesia
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: Masukkan Nomor Undangan Anda
+        - generic [ref=e12]: Nomor undangan digunakan untuk memverifikasi identitas kehadiran.
+      - generic [ref=e14]:
+        - group [ref=e16]:
+          - generic [ref=e17]: Nomor Undangan
+          - textbox "Nomor Undangan" [active] [ref=e18]:
+            - /placeholder: "Contoh: A-001"
+          - paragraph [ref=e19]: Pastikan nomor sama seperti yang tertera pada surat undangan.
+        - button "Verifikasi Kehadiran" [disabled]:
+          - img
+          - text: Verifikasi Kehadiran
+  - region "Notifications alt+T"
+  - alert [ref=e20]

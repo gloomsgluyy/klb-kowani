@@ -1,0 +1,36 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: KONGRES LUAR BIASA
+      - generic [ref=e6]: Kongres Wanita Indonesia
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - img [ref=e56]
+        - generic [ref=e59]: Hadir
+        - generic [ref=e60]: Selamat Datang!
+        - generic [ref=e61]: Terima kasih, Susi Maharani, sudah menghadiri Kongres Luar Biasa.
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - term [ref=e65]: Nama Lengkap
+            - definition [ref=e66]: Susi Maharani
+          - generic [ref=e67]:
+            - term [ref=e68]: Organisasi / Asal
+            - definition [ref=e69]: Organisasi A
+          - generic [ref=e70]:
+            - term [ref=e71]: Nomor Undangan
+            - definition [ref=e72]: A-001
+          - generic [ref=e73]:
+            - term [ref=e74]: Peran
+            - definition [ref=e75]: Delegasi
+          - generic [ref=e76]:
+            - term [ref=e77]: Waktu Hadir
+            - definition [ref=e78]: 22 Mei 2026, 13.34
+        - paragraph [ref=e79]: Silakan tunjukkan halaman ini kepada resepsionis.
+      - button "Cek Peserta Lain" [ref=e81]:
+        - img
+        - text: Cek Peserta Lain
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e26] [cursor=pointer]:
+    - img [ref=e27]
+  - alert [ref=e20]
