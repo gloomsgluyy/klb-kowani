@@ -260,11 +260,11 @@ function OrganizationPicker({
     <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-7 px-4 py-8 sm:px-8 lg:px-10">
       <section className="mx-auto flex w-full max-w-4xl flex-col items-center gap-4 text-center">
         <KlbLogoMark />
-        <Badge variant="secondary">Registrasi Kehadiran</Badge>
-        <h1 className="font-heading text-4xl font-bold text-primary sm:text-5xl">
+        <Badge variant="secondary" className="text-sm font-bold px-3 py-1 border-2">Registrasi Kehadiran</Badge>
+        <h1 className="font-heading text-4xl font-extrabold text-primary sm:text-5xl">
           Selamat Datang
         </h1>
-        <p className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+        <p className="max-w-2xl text-lg font-bold leading-relaxed text-muted-foreground sm:text-xl">
           Silakan pilih asal organisasi Anda, kemudian pilih nama Anda pada
           daftar undangan.
         </p>
@@ -335,27 +335,27 @@ function OrganizationCard({
       type="button"
       onClick={onSelect}
     >
-      <Card className="h-full bg-card/95 transition group-hover:border-primary group-hover:shadow-md">
+      <Card className="h-full bg-card/95 transition group-hover:border-primary group-hover:shadow-md border-2">
         <CardHeader className="gap-4">
-          <div className="flex size-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+          <div className="flex size-14 items-center justify-center rounded-full bg-primary/10 text-primary border border-primary/20 shrink-0">
             <Building2Icon className="size-7" />
           </div>
-          <div className="min-w-0">
-            <CardTitle className="line-clamp-2 font-heading text-2xl text-primary">
+          <div className="min-w-0 text-left">
+            <CardTitle className="font-heading text-[1.75rem] font-black leading-tight text-primary">
               {(() => {
                 const firstGuest = organization.guests[0]
                 const orgNum = firstGuest ? parseInt(firstGuest.invitationNumber.split("-")[1], 10) : null
                 return orgNum !== null ? `${orgNum}. ${organization.organization}` : organization.organization
               })()}
             </CardTitle>
-            <CardDescription className="mt-2 flex items-center gap-2">
-              <UsersIcon className="size-4" />
+            <CardDescription className="mt-2 flex items-center gap-2 text-base font-bold text-muted-foreground">
+              <UsersIcon className="size-5" />
               {organization.totalGuests} nama undangan
             </CardDescription>
           </div>
         </CardHeader>
         <CardContent>
-          <Badge variant="outline">
+          <Badge className="text-sm font-bold border-2" variant="outline">
             {organization.totalCheckedIn} sudah hadir
           </Badge>
         </CardContent>
@@ -375,9 +375,9 @@ function GuestPicker({
 }) {
   return (
     <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-8 sm:px-8 lg:px-10">
-      <Button className="w-fit" variant="outline" onClick={onBack}>
-        <ArrowLeftIcon data-icon="inline-start" />
-        Kembali
+      <Button className="w-fit h-12 px-6 text-base font-black border-2" variant="outline" onClick={onBack}>
+        <ArrowLeftIcon data-icon="inline-start" className="size-5 stroke-[3]" />
+        KEMBALI
       </Button>
 
       <section className="grid gap-4 sm:grid-cols-2">
@@ -406,29 +406,30 @@ function GuestCard({
       type="button"
       onClick={onSelect}
     >
-      <Card className="h-full bg-card/95 transition group-hover:border-primary group-hover:shadow-md">
+      <Card className="h-full bg-card/95 transition group-hover:border-primary group-hover:shadow-md border-2">
         <CardHeader className="gap-4">
-          <div className="flex size-14 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
+          <div className="flex size-14 items-center justify-center rounded-full bg-secondary text-secondary-foreground border shrink-0">
             <UserRoundIcon className="size-7" />
           </div>
-          <div className="min-w-0">
-            <CardTitle className="font-heading text-2xl text-primary">
+          <div className="min-w-0 text-left">
+            <CardTitle className="font-heading text-[1.75rem] font-black leading-tight text-primary">
               {guest.fullName}
             </CardTitle>
-            <CardDescription className="mt-2">
-              Nomor undangan {guest.invitationNumber}
+            <CardDescription className="mt-2 text-base font-bold text-muted-foreground">
+              Nomor undangan: <span className="text-foreground font-black">{guest.invitationNumber}</span>
             </CardDescription>
           </div>
         </CardHeader>
         <CardContent>
           <Badge
+            className="text-sm font-bold border-2"
             variant={
               guest.attendanceStatus === "checked_in" ? "secondary" : "outline"
             }
           >
             {guest.attendanceStatus === "checked_in"
-              ? "Sudah hadir"
-              : "Belum hadir"}
+              ? "✓ Sudah hadir"
+              : "○ Belum hadir"}
           </Badge>
         </CardContent>
       </Card>
@@ -456,21 +457,21 @@ function ConfirmationCard({
   onReject: () => void
 }) {
   return (
-    <Card className="rounded-2xl border bg-card/95 text-center shadow-lg backdrop-blur-md">
+    <Card className="rounded-2xl border-2 bg-card/95 text-center shadow-lg backdrop-blur-md">
       <CardHeader className="flex w-full flex-col items-center px-6 pt-8 text-center sm:px-12">
         <div className="mb-2 flex size-24 items-center justify-center rounded-full border bg-accent/10 text-primary shadow-inner">
           <BadgeCheckIcon className="size-12" />
         </div>
-        <CardTitle className="font-heading text-3xl font-bold text-primary italic">
+        <CardTitle className="font-heading text-4xl font-extrabold text-primary italic">
           Konfirmasi Identitas
         </CardTitle>
-        <CardDescription className="mx-auto w-full max-w-2xl text-lg leading-relaxed text-balance sm:text-xl">
+        <CardDescription className="mx-auto w-full max-w-2xl text-xl font-bold leading-relaxed text-foreground sm:text-2xl">
           Apakah benar Anda&nbsp;
-          <strong className="font-semibold text-foreground">
+          <strong className="font-black text-primary underline decoration-2">
             {guest.fullName}
           </strong>
           &nbsp;dari&nbsp;
-          <strong className="font-semibold text-foreground">
+          <strong className="font-black text-primary underline decoration-2">
             {(() => {
               const orgNum = parseInt(guest.invitationNumber.split("-")[1], 10)
               return `${orgNum}. ${guest.organization}`
@@ -482,28 +483,28 @@ function ConfirmationCard({
       <CardContent className="w-full px-6 sm:px-12">
         <GuestDetails guest={guest} />
       </CardContent>
-      <CardFooter className="flex w-full flex-col gap-3 border-0 bg-transparent px-6 pb-8 sm:px-12">
+      <CardFooter className="flex w-full flex-col gap-4 border-0 bg-transparent px-6 pb-8 sm:px-12">
         <Button
-          className="h-12 w-full rounded-full"
+          className="h-14 w-full rounded-full text-lg font-black tracking-wide shadow-md"
           disabled={isLoading}
           onClick={onConfirm}
         >
           {isLoading ? (
             <Spinner data-icon="inline-start" />
           ) : (
-            <ShieldCheckIcon data-icon="inline-start" />
+            <ShieldCheckIcon data-icon="inline-start" className="size-6 stroke-[3]" />
           )}
-          Ya, Saya Hadir
+          YA, SAYA HADIR
         </Button>
         <Button
-          className="h-12 w-full rounded-full border-2"
+          className="h-14 w-full rounded-full border-2 text-lg font-black tracking-wide shadow-sm"
           disabled={isLoading}
           type="button"
           variant="outline"
           onClick={onReject}
         >
-          <CircleXIcon data-icon="inline-start" />
-          Tidak
+          <CircleXIcon data-icon="inline-start" className="size-6 stroke-[3]" />
+          TIDAK (KEMBALI)
         </Button>
       </CardFooter>
     </Card>
@@ -574,7 +575,7 @@ function GuestDetails({
   showTime?: boolean
 }) {
   return (
-    <dl className="grid gap-4 rounded-lg border bg-muted/60 p-5 text-left sm:grid-cols-2">
+    <dl className="grid gap-4 rounded-xl border-2 bg-muted/95 p-6 text-left sm:grid-cols-2">
       <DetailItem label="Nomor Undangan" value={guest.invitationNumber} />
       <DetailItem label="Nama Lengkap" value={guest.fullName} />
       <DetailItem
@@ -597,10 +598,10 @@ function GuestDetails({
 function DetailItem({ label, value }: { label: string; value: string }) {
   return (
     <div className="min-w-0">
-      <dt className="text-xs font-medium text-muted-foreground uppercase">
+      <dt className="text-sm font-black text-muted-foreground uppercase tracking-wider">
         {label}
       </dt>
-      <dd className="font-heading text-base font-semibold break-words text-foreground">
+      <dd className="font-heading text-xl font-black break-words text-foreground mt-1">
         {value}
       </dd>
     </div>
