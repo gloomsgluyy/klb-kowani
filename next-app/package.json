@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "node scripts/migrate-supabase.mjs && next build",
+    "build": "next build",
     "db:migrate": "node scripts/migrate-supabase.mjs",
     "start": "next start",
     "lint": "eslint",
