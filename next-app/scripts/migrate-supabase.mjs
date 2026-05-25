@@ -9,14 +9,12 @@ const seedGuests = [
   ["A-004", "Hj. Wien Yoyo S", "PASUNDAN ISTERI", "Delegasi"],
   ["A-005", "Prof. Dewi Indriani Yusuf", "PERWARI", "Delegasi"],
   ["A-006", "Pdt. Detty BT Liow Mambo, STh", "PERSATUAN WANITA KRISTEN INDONESIA", "Delegasi"],
-  ["A-007", "Ir. R. Ay . Endang W. Rama Boedi, MSc.", "PUTRI NARPO WANDOWO", "Delegasi"],
+  ["A-007", "Ir. R. Ay . Endang W. Rama Boedi, MSc", "PUTRI NARPO WANDOWO", "Delegasi"],
   ["A-008", "Dra. Damayanti Soetjahjo", "BUDI ISTERI", "Delegasi"],
   ["A-010", "Novia H Lambey SS", "PIKAT", "Delegasi"],
   ["A-011", "Hj. Rosa Muhammad Bsc, S.Pd", "PERWANAS", "Delegasi"],
   ["A-012", "Tati Subandi", "PWK-UGM", "Delegasi"],
   ["A-013", "Dr. Ade Jubaedah , S.Keb.Bdn,MM.MKM", "IKATAN BIDAN INDONESIA", "Delegasi"],
-  ["A-014", "Uli Simanjuntak", "PERSIT KCK", "Delegasi"],
-  ["A-015", "Juliati Sigit Prabowo", "BHAYANGKARI", "Delegasi"],
   ["A-016", "Femmy Pangkerego S.E. M.Pd", "WANITA SAHATI", "Delegasi"],
   ["A-017", "Prof.Dr. Hj. Valina Singka Subekti, M.Si", "WANITA SYARIKAT ISLAM", "Delegasi"],
   ["A-018", "Murbawi Siwi, SKM", "RUKUN WANITA INDONESIA", "Delegasi"],
@@ -24,16 +22,13 @@ const seedGuests = [
   ["A-020", "Titi Suwarso", "PERSATUAN ISTERI TEKNISI INDONESIA", "Delegasi"],
   ["A-021", "DR Ir. Giwo Rubianto Wiyogo", "GERAKAN WANITA SEJAHTERA (GWS)", "Delegasi"],
   ["A-022", "Dr. Ir. Retno Sri Endah Lestari, MSc.PhD", "IKATAN SARJANA WANITA INDONESIA (ISWI)", "Delegasi"],
-  ["A-024", "Ny. Isa M. Tonny Harjono.", "PIA ARDHYA GARINI", "Delegasi"],
-  ["A-027", "Ny. Vera Muhammad Ali", "JALASENASTRI", "Delegasi"],
-  ["A-028", "Dra. Rahmayulis Saleh, MM", "IKATAN KELUARGA WARTAWAN INDONESIA (IKWI)", "Delegasi"],
+  ["A-028", "", "IKATAN KELUARGA WARTAWAN INDONESIA (IKWI)", "Delegasi"],
   ["A-031", "Usanti Sindia A. Permana", "IKATAN ISTERI DOKTER INDONESIA (IIDI)", "Delegasi"],
   ["A-032", "Santi Diansari Hargianto, S.H, M.H", "WANITA PERSAHI", "Delegasi"],
   ["A-034", "Dra.Hj. Marfuah Musthofa,M.Pd", "WANITA ISLAM", "Delegasi"],
   ["A-035", "Sri Meisista", "KORPS HMI - WATI (KOHATI)", "Delegasi"],
   ["A-037", "Lina Indiarti Wresniwiro, SE.MM", "PIVERI", "Delegasi"],
   ["A-041", "Endah Ade Supandi", "PERIP", "Delegasi"],
-  ["A-043", "Sruning Burhanuddin", "IKATAN ADHYAKSA DHARMA KARINI", "Delegasi"],
   ["A-044", "Ernawati Fauzi", "WANITA KOSGORO", "Delegasi"],
   ["A-045", "Hj. Ening Thalhah", "WANITA SATYAPRAJA", "Delegasi"],
   ["A-046", "Siti Amelia Jorjiana, S.SN.MH", "WANITA MKGR", "Delegasi"],
@@ -43,15 +38,14 @@ const seedGuests = [
   ["A-050", "Ir. Anggraini Purnami", "PERSATUAN ISTERI INSINYUR INDONESIA (PIII)", "Delegasi"],
   ["A-052", "Hj. Netty Marliza Komarudin, S.H", "WANITA SWADIRI", "Delegasi"],
   ["A-054", "Ir. Dany Soedarsono", "HIMPUNAN WANITA KARYA (HWK)", "Delegasi"],
-  ["A-055", "Brigjen TNI (Purn) Hastuti Sari, SH", "DEPWAN PEPABRI", "Delegasi"],
+  ["A-055", "Brigjen TNI", "DEPWAN PEPABRI", "Delegasi"],
   ["A-056", "Ny. Venessa Supit", "KARTINI AMPI", "Delegasi"],
   ["A-057", "Prof. Dr. Unifah Rosyidi, M.Pd", "WANITA PGRI", "Delegasi"],
   ["A-058", "Dra. Anita Ariyani", "WANITA TANI INDONESIA HKTI", "Delegasi"],
   ["A-059", "Ny. Dr. Ir. Hetifah Sjaifudian, MPP", "AL-HIDAYAH", "Delegasi"],
   ["A-060", "Ny. Lucy Salim", "WANITA BUDDHIS INDONESIA", "Delegasi"],
   ["A-061", "Dwie Riawenny Nasution", "WANITA FKPPI", "Delegasi"],
-  ["A-062", "Ny. Yuliarti R Merati", "IKAI", "Delegasi"],
-  ["A-063", "Ny. Evi Agus Subiyanto", "IKKT PRAGATI WIRA ANGGINI", "Delegasi"],
+  ["A-062", "Ny. Yuliarti  R Merati", "IKAI", "Delegasi"],
   ["A-064", "Hj. Margaret Aliyatul Maimunah, SS.,MSi", "FATAYAT NU", "Delegasi"],
   ["A-065", "Ny. Pia Feriasti Megananda, BA", "WIRAWATI CATUR PANCA", "Delegasi"],
   ["A-066", "Ny. Lana Trilli Naire Akademi", "WANITA SHUFIAH", "Delegasi"],
@@ -60,9 +54,9 @@ const seedGuests = [
   ["A-070", "Prof. Dr. Zahrotun Nihayah, M.Psi", "GUPPI", "Delegasi"],
   ["A-071", "Drh. Tri Isyani Tunggadewi, MSc", "PIDHI MVI", "Delegasi"],
   ["A-072", "Dr. dr. Hj. Ulla Nuchwaty, MM", "WANITA PEMBANGUNAN INDONESIA (WPI)", "Delegasi"],
-  ["A-073", "Ny. Dr, Hj. Hediati Erry, MM. MSI", "DPP WPPKBI", "Delegasi"],
+  ["A-073", "Ny. Dr, Hj. Hediati Erry", "DPP WPPKBI", "Delegasi"],
   ["A-074", "Ny. Dr. Hj. Marlinda Irwanti Poernomo, SE,M.Si", "KORPS WANITA MDI", "Delegasi"],
-  ["A-075", "Dr. Ir. Anita Dewi Anggraini Kolopaking,SH.MH.FCBArb", "YATNAWATI KERTINI", "Delegasi"],
+  ["A-075", "Dr. Ir. Anita Dewi Anggraini Kolopaking,SH.MH.FCBAr b", "YATNAWATI KERTINI", "Delegasi"],
   ["A-076", "Hj. Fifi Firman Gani", "DIAN KEMALA", "Delegasi"],
   ["A-077", "Reny Anggrayni", "PERSAUDARAAN MUSLIMAH (SALIMAH)", "Delegasi"],
   ["A-078", "Wikanti Yogi, S.Ag, MS", "WANITA HINDU DHARMA INDONESIA (WHDI)", "Delegasi"],
@@ -92,23 +86,13 @@ const seedGuests = [
   ["A-102", "Hj. Ernawati Budin, B.BA", "FORUM KOMUNIKASI IBU-IBU SUMATERA BAGIAN SELATAN (FKIISBS)", "Delegasi"],
   ["A-103", "Dra. Hj. Saihun Aldjufrie, M.Pd.I", "WANITA ISLAM ALKHAIRAT", "Delegasi"],
   ["A-104", "Lana T. Kuntjoro", "PEREMPUAN INDONESIA MAJU (PIM)", "Delegasi"],
-  ["A-105", "Ir. Diah Indrajati, MSc.", "PEREMPUAN PENSIUNAN INDONESIA (PERPENI)", "Delegasi"],
+  ["A-105", "Ir. Diah Indrajati, MSc", "PEREMPUAN PENSIUNAN INDONESIA (PERPENI)", "Delegasi"],
   ["A-106", "Artika Kristanti", "JALASTORIA", "Delegasi"],
   ["A-107", "Prof.Dr.Hj. Sylviana Murni, SH.MSi", "MAJELIS ILMUWAN MUSLIMAH INDONESIA (MAI)", "Delegasi"],
   ["A-108", "Prof.Dr. Hj. Siti Nur Azizah, SH.M.Hum", "PERHIMPUNAN SAUDAGAR MUSLIMAH INDONESIA (PERSAMI)", "Delegasi"],
   ["A-109", "Hj. Melani Leimena Suharli, S.Sos.MM", "PERKUMPULAN WANITA PEJUANG '45", "Delegasi"],
-  ["A-110", "IJP (P) Apriastini Bakti Bugiansri Kamin, S.IK", "Paguyuban Keluarga Besar Purnawirawan Polisi Wanita (PKB PPRI-PP POLRI)", "Delegasi"],
-  ["A-111", "Hastuti Sari Sukapti , SH", "PERSATUAN PURNAWIRAWAN KORPS WANITA ANGKATAN DARAT (PP KOWAD)", "Delegasi"],
-  ["A-112", "Dra.Hj. Triana Wulandari , Msi", "Cahaya Ladara Nusantara", "Delegasi"],
-  ["A-113", "Dra. Fahimah Abdul Kadir Askar", "Al - Irsyad", "Delegasi"],
-  ["A-114", "Ina Martina", "Alisa Khadijah - ICMI", "Delegasi"],
-  ["A-115", "T. Nurliyana Habsjah", "PEKRAF", "Delegasi"],
-  ["A-116", "Enda Marka", "IKAPURNA ASKRINDO (Ikatan Purnakaryawan Askrindo) / IPA", "Delegasi"],
-  ["A-117", "Dewi Herawati", "ESPAS INDONESIA (EMAK-EMAK SMART PEJUANG ANDALAN SEJATI)", "Delegasi"],
-  ["A-118", "Hj. Jamilah Abdul Gani, SH.M.Kn", "Majelis Nasional Korps Alumni Himpunan Mahasiswa Islam (FORHATI NASIONAL)", "Delegasi"],
-  ["A-119", "Delegasi WPC", "Karya Perempuan Indonesia (Womenpreneur Community/WPC)", "Delegasi"],
-  ["A-120", "Delegasi ADI", "Asosiasi Dosen Indonesia", "Delegasi"],
-  ["A-121", "Prof. Dr. Hj. Amany Burhanuddin Lubis, MA", "perkumpulan Wanita Alumni Timur Tengah", "Delegasi"],
+  ["A-110", "IJP", "Paguyuban Keluarga Besar Purnawirawan Polisi Wanita (PKB PPRI-PP POLRI", "Delegasi"],
+  ["A-111", "Hastuti Sari Sukapti , SH BrigadirJenderal TNI", "PERSATUAN PURNAWIRAWAN KORPS WANITA ANGKATAN DARAT (PP KOWAD)", "Delegasi"],
 ]
 
 const pool = new Pool({
@@ -172,6 +156,13 @@ async function migrate() {
       create index if not exists guests_checked_in_at_idx
       on guests (checked_in_at desc)
     `)
+
+    // Purge any deleted organizations from the database
+    const activeInvitationNumbers = seedGuests.map(g => g[0])
+    await client.query(
+      `delete from guests where not (invitation_number = any($1))`,
+      [activeInvitationNumbers]
+    )
 
     for (const [invitationNumber, fullName, organization, role] of seedGuests) {
       await client.query(
