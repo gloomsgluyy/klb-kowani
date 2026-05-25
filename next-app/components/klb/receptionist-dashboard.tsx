@@ -286,7 +286,12 @@ export function ReceptionistDashboard({ token }: { token: string }) {
                             <TableCell className="font-medium">
                               {guest.fullName}
                             </TableCell>
-                            <TableCell>{guest.organization}</TableCell>
+                            <TableCell>
+                              {(() => {
+                                const orgNum = parseInt(guest.invitationNumber.split("-")[1], 10)
+                                return `${orgNum}. ${guest.organization}`
+                              })()}
+                            </TableCell>
                             <TableCell>
                               <Badge variant="outline">
                                 {guest.invitationNumber}
@@ -389,7 +394,10 @@ function ArrivalItem({
           {guest.fullName}
         </div>
         <div className="truncate text-sm text-muted-foreground">
-          {guest.organization}
+          {(() => {
+            const orgNum = parseInt(guest.invitationNumber.split("-")[1], 10)
+            return `${orgNum}. ${guest.organization}`
+          })()}
         </div>
       </div>
       <div className="flex shrink-0 items-center justify-between gap-3 sm:flex-col sm:items-end">
@@ -456,7 +464,12 @@ function PrintableAttendanceTicket({ guest }: { guest: GuestRecord | null }) {
             <strong>Hadir</strong>
           </div>
           <h2>{guest.fullName}</h2>
-          <p>{guest.organization}</p>
+          <p>
+            {(() => {
+              const orgNum = parseInt(guest.invitationNumber.split("-")[1], 10)
+              return `${orgNum}. ${guest.organization}`
+            })()}
+          </p>
           <div className="print-ticket-meta">
             <div>
               <span>Nomor Undangan</span>

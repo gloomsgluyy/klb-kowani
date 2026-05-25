@@ -342,7 +342,11 @@ function OrganizationCard({
           </div>
           <div className="min-w-0">
             <CardTitle className="line-clamp-2 font-heading text-2xl text-primary">
-              {organization.organization}
+              {(() => {
+                const firstGuest = organization.guests[0]
+                const orgNum = firstGuest ? parseInt(firstGuest.invitationNumber.split("-")[1], 10) : null
+                return orgNum !== null ? `${orgNum}. ${organization.organization}` : organization.organization
+              })()}
             </CardTitle>
             <CardDescription className="mt-2 flex items-center gap-2">
               <UsersIcon className="size-4" />
@@ -467,7 +471,10 @@ function ConfirmationCard({
           </strong>
           &nbsp;dari&nbsp;
           <strong className="font-semibold text-foreground">
-            {guest.organization}
+            {(() => {
+              const orgNum = parseInt(guest.invitationNumber.split("-")[1], 10)
+              return `${orgNum}. ${guest.organization}`
+            })()}
           </strong>
           ?
         </CardDescription>
@@ -570,7 +577,13 @@ function GuestDetails({
     <dl className="grid gap-4 rounded-lg border bg-muted/60 p-5 text-left sm:grid-cols-2">
       <DetailItem label="Nomor Undangan" value={guest.invitationNumber} />
       <DetailItem label="Nama Lengkap" value={guest.fullName} />
-      <DetailItem label="Organisasi / Asal" value={guest.organization} />
+      <DetailItem
+        label="Organisasi / Asal"
+        value={(() => {
+          const orgNum = parseInt(guest.invitationNumber.split("-")[1], 10)
+          return `${orgNum}. ${guest.organization}`
+        })()}
+      />
       {showTime ? (
         <DetailItem
           label="Waktu Hadir"

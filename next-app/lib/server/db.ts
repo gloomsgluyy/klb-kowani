@@ -96,7 +96,7 @@ export async function getGuestCatalogFromDb(): Promise<
         attendance_status,
         checked_in_at
       from guests
-      order by organization asc, full_name asc
+      order by invitation_number asc, full_name asc
     `
   )
 
