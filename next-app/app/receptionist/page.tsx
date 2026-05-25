@@ -6,7 +6,7 @@ import {
 } from "@/components/klb/klb-shell"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { RECEPTIONIST_TOKEN } from "@/lib/attendance-store"
+import { isValidReceptionistToken } from "@/lib/attendance-types"
 
 type ReceptionistPageProps = {
   searchParams: Promise<{
@@ -18,8 +18,9 @@ export default async function ReceptionistPage({
   searchParams,
 }: ReceptionistPageProps) {
   const params = await searchParams
+  const token = params.token
 
-  if (params.token !== RECEPTIONIST_TOKEN) {
+  if (!isValidReceptionistToken(token)) {
     return (
       <main className="flex min-h-svh flex-col bg-background">
         <KlbTopBar />
@@ -46,5 +47,5 @@ export default async function ReceptionistPage({
     )
   }
 
-  return <ReceptionistDashboard />
+  return <ReceptionistDashboard token={token as string} />
 }
